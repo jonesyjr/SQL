@@ -1,0 +1,21 @@
+CREATE TABLE libertas (id INTEGER PRIMARY KEY, title TEXT, price REAL, isbn TEXT, inventory INTEGER);
+INSERT into libertas VALUES (1, "WOT", 45.19, "99yy98", 150);
+insert into libertas values (2, "Mistborn", 22.33, "o70uohoh", 110);
+insert into libertas values (3, "SA", 76.33, "ljou0uj", 5);
+insert into libertas values (4, "Broken Earth", 78.22, "lkjohs89y3y", 5);
+insert into libertas values (5, "100,000 Kingdoms", 87.44, "ljsldjo8u08uqj", 8);
+insert into libertas values (6, "Wayward Pines", 33.19, "ljsdohiy120987y", 15);
+insert into libertas values (7, "Dresden Files", 99.12, "ljsho8u1298uwjnd", 15);
+insert into libertas values (8, "Legacy of Orisha", 100.82, "lkjsohwopy9179", 15);
+insert into libertas values (9, "Nsibidi Scripts", 99.12, "ljwopiwuo8798u", 29);
+insert into libertas values (10, "Codex Alera", 34.22, "l;jsowh0", 25);
+insert into libertas values (11, "Jack Reacher", 33.98, "l;sjljso7979coj", 20);
+insert into libertas values (12, "Hunger Games", 32.98, ";ljsdoypy08", 20);
+insert into libertas values (13, "The Passage Trilogy", 19.24, "ljspohohd0797", 10);
+insert into libertas values (14, "All Souls", 12.94, "lkjshopshd9797", 10);
+insert into libertas values (15, "The Dark Tower", 29.11, "ljsdhshd797", 10);
+
+select title, price from libertas order by price;
+select title, max(price) from libertas;
+select title, min(price) from libertas;
+select sum(price) from libertas;
